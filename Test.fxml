@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="549.0" prefWidth="631.0" style="-fx-background-color: #451133;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Test">
+   <children>
+      <ImageView fitHeight="740.0" fitWidth="517.0" layoutX="123.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1662_original%20-%20Copie.jpg" />
+         </image>
+      </ImageView>
+      <FontAwesomeIcon fill="WHITE" glyphName="CHECK" layoutX="558.0" layoutY="699.0" onMousePressed="#send" text="Send " wrappingWidth="59.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </FontAwesomeIcon>
+      <Pane fx:id="Q1" layoutX="98.0" layoutY="66.0" prefHeight="59.0" prefWidth="533.0" visible="false">
+         <children>
+            <CheckBox fx:id="V1" layoutX="459.0" layoutY="37.0" mnemonicParsing="false" onMousePressed="#V1" text="Validate" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </CheckBox>
+            <Label fx:id="Qest1" layoutX="32.0" layoutY="6.0" prefHeight="17.0" prefWidth="330.0" textFill="WHITE" />
+            <TextField fx:id="re1" layoutX="32.0" layoutY="33.0" prefHeight="21.0" prefWidth="330.0" />
+         </children>
+      </Pane>
+      <RadioButton fx:id="R1" layoutX="27.0" layoutY="85.0" mnemonicParsing="false" onMousePressed="#R1" text="1" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="3.0" layoutY="8.0" text="Questions" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Pane fx:id="Q2" layoutX="98.0" layoutY="125.0" prefHeight="59.0" prefWidth="533.0" visible="false">
+         <children>
+            <CheckBox fx:id="V2" layoutX="459.0" layoutY="37.0" mnemonicParsing="false" onMousePressed="#V2" text="Validate" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </CheckBox>
+            <Label fx:id="Qest2" layoutX="31.0" layoutY="6.0" prefHeight="17.0" prefWidth="330.0" textFill="WHITE" />
+            <TextField fx:id="re2" layoutX="31.0" layoutY="33.0" prefHeight="21.0" prefWidth="330.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="Q3" layoutX="98.0" layoutY="184.0" prefHeight="59.0" prefWidth="533.0" visible="false">
+         <children>
+            <CheckBox fx:id="V3" layoutX="459.0" layoutY="37.0" mnemonicParsing="false" onMousePressed="#V3" text="Validate" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </CheckBox>
+            <Label fx:id="Qest3" layoutX="30.0" layoutY="6.0" prefHeight="17.0" prefWidth="330.0" textFill="WHITE" />
+            <TextField fx:id="re3" layoutX="30.0" layoutY="33.0" prefHeight="21.0" prefWidth="330.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="Q4" layoutX="98.0" layoutY="243.0" prefHeight="59.0" prefWidth="533.0" visible="false">
+         <children>
+            <CheckBox fx:id="V4" layoutX="459.0" layoutY="37.0" mnemonicParsing="false" onMousePressed="#V4" text="Validate" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </CheckBox>
+            <Label fx:id="Qest4" layoutX="34.0" layoutY="6.0" prefHeight="17.0" prefWidth="330.0" textFill="WHITE" />
+            <TextField fx:id="re4" layoutX="34.0" layoutY="25.0" prefHeight="21.0" prefWidth="330.0" />
+         </children>
+      </Pane>
+      <RadioButton fx:id="R3" layoutX="28.0" layoutY="203.0" mnemonicParsing="false" onMousePressed="#R3" text="3" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="R2" layoutX="28.0" layoutY="144.0" mnemonicParsing="false" onMousePressed="#R2" text="2" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="R4" layoutX="27.0" layoutY="262.0" mnemonicParsing="false" onMousePressed="#R4" text="4" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <Pane fx:id="Q5" layoutX="98.0" layoutY="304.0" prefHeight="59.0" prefWidth="533.0" visible="false">
+         <children>
+            <CheckBox fx:id="V5" layoutX="459.0" layoutY="37.0" mnemonicParsing="false" onMousePressed="#V5" text="Validate" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </CheckBox>
+            <Label fx:id="Qest5" layoutX="33.0" layoutY="6.0" prefHeight="17.0" prefWidth="330.0" textFill="WHITE" />
+            <TextField fx:id="re5" layoutX="33.0" layoutY="25.0" prefHeight="21.0" prefWidth="330.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="Q6" layoutX="98.0" layoutY="363.0" prefHeight="59.0" prefWidth="533.0" visible="false">
+         <children>
+            <CheckBox fx:id="V6" layoutX="459.0" layoutY="37.0" mnemonicParsing="false" onMousePressed="#V6" text="Validate" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </CheckBox>
+            <Label fx:id="Qest6" layoutX="35.0" layoutY="6.0" prefHeight="17.0" prefWidth="330.0" textFill="WHITE" />
+            <TextField fx:id="re6" layoutX="35.0" layoutY="33.0" prefHeight="21.0" prefWidth="330.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="Q7" layoutX="98.0" layoutY="422.0" prefHeight="59.0" prefWidth="533.0" visible="false">
+         <children>
+            <CheckBox fx:id="V7" layoutX="459.0" layoutY="37.0" mnemonicParsing="false" onMousePressed="#V7" text="Validate" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </CheckBox>
+            <Label fx:id="Qest7" layoutX="33.0" layoutY="6.0" prefHeight="17.0" prefWidth="330.0" textFill="WHITE" />
+            <TextField fx:id="re7" layoutX="33.0" layoutY="33.0" prefHeight="21.0" prefWidth="330.0" />
+         </children>
+      </Pane>
+      <FontAwesomeIcon fx:id="Cancel" fill="WHITE" glyphName="TIMES" layoutX="39.0" layoutY="700.0" onMousePressed="#Cancel" text="Cancel ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </FontAwesomeIcon>
+      <RadioButton fx:id="R5" layoutX="27.0" layoutY="323.0" mnemonicParsing="false" onMousePressed="#R5" text="5" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="R6" layoutX="27.0" layoutY="382.0" mnemonicParsing="false" onMousePressed="#R6" text="6" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="R7" layoutX="27.0" layoutY="441.0" mnemonicParsing="false" onMousePressed="#R7" text="7" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="titretest" layoutX="162.0" layoutY="19.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Pane fx:id="Q8" layoutX="98.0" layoutY="481.0" prefHeight="59.0" prefWidth="533.0" visible="false">
+         <children>
+            <CheckBox fx:id="V8" layoutX="459.0" layoutY="37.0" mnemonicParsing="false" onMousePressed="#V8" text="Validate" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </CheckBox>
+            <Label fx:id="Qest8" layoutX="31.0" layoutY="6.0" prefHeight="17.0" prefWidth="330.0" textFill="WHITE" />
+            <TextField fx:id="re8" layoutX="31.0" layoutY="33.0" prefHeight="21.0" prefWidth="330.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="Q9" layoutX="98.0" layoutY="540.0" prefHeight="59.0" prefWidth="533.0" visible="false">
+         <children>
+            <CheckBox fx:id="V9" layoutX="459.0" layoutY="37.0" mnemonicParsing="false" onMousePressed="#V9" text="Validate" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </CheckBox>
+            <Label fx:id="Qest9" layoutX="30.0" layoutY="6.0" prefHeight="17.0" prefWidth="330.0" textFill="WHITE" />
+            <TextField fx:id="re9" layoutX="30.0" layoutY="33.0" prefHeight="21.0" prefWidth="330.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="Q10" layoutX="98.0" layoutY="599.0" prefHeight="59.0" prefWidth="533.0" visible="false">
+         <children>
+            <CheckBox fx:id="V10" layoutX="459.0" layoutY="37.0" mnemonicParsing="false" onMousePressed="#V10" text="Validate" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </CheckBox>
+            <Label fx:id="Qest10" layoutX="29.0" layoutY="6.0" prefHeight="17.0" prefWidth="330.0" textFill="WHITE" />
+            <TextField fx:id="re10" layoutX="29.0" layoutY="33.0" prefHeight="21.0" prefWidth="330.0" />
+         </children>
+      </Pane>
+      <RadioButton fx:id="R8" layoutX="28.0" layoutY="500.0" mnemonicParsing="false" onMousePressed="#R8" text="8" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="R9" layoutX="28.0" layoutY="570.0" mnemonicParsing="false" onMousePressed="#R9" text="9" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="R10" layoutX="28.0" layoutY="629.0" mnemonicParsing="false" onMousePressed="#R10" text="10" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <FontAwesomeIcon fx:id="Ad" fill="#fffbfb" glyphName="PLUS" layoutX="12.0" layoutY="58.0" onMousePressed="#Add" text="Add ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </FontAwesomeIcon>
+      <FontAwesomeIcon fx:id="del" fill="WHITE" glyphName="MINUS" layoutX="65.0" layoutY="58.0" onMousePressed="#Delete" text="Delete " />
+   </children>
+</AnchorPane>

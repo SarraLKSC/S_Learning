@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1F5F8D;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignUp">
+    <children>
+        <ImageView fitHeight="511.0" fitWidth="724.0" layoutX="1.0" onMousePressed="#Browse" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@1662_original.jpg" />
+            </image>
+        </ImageView>
+          <Label layoutX="204.0" layoutY="17.0" text="Password" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+          <Label layoutX="218.0" layoutY="125.0" text="Profile picture" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Button fx:id="Browse" layoutX="428.0" layoutY="123.0" mnemonicParsing="false" onMousePressed="#Browse" text="Browse" />
+          <Button fx:id="Signup" layoutX="322.0" layoutY="353.0" mnemonicParsing="false" onMousePressed="#signup" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #451133;" text="Sign up" textFill="#20ceeb">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <PasswordField fx:id="passs" layoutX="288.0" layoutY="92.0" />
+      <PasswordField fx:id="pass" layoutX="288.0" layoutY="37.0" />
+          <Label layoutX="204.0" layoutY="62.0" text="Confirm Password" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="passmatch" text="not matching" textFill="#f50303" visible="false" />
+      <ImageView fx:id="Picture" fitHeight="141.0" fitWidth="188.0" layoutX="291.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@profile.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="Warning" layoutX="437.0" layoutY="64.0" style="-fx-background-color: #453455;" text="Password Error" textFill="#f20707" underline="true" visible="false" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Pane fx:id="pane" layoutX="123.0" layoutY="12.0" prefHeight="379.0" prefWidth="499.0" style="-fx-background-color: #451133;" visible="false">
+         <children>
+            <Label layoutX="98.0" layoutY="66.0" text="Your account has been successfully created" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label layoutX="56.0" layoutY="111.0" prefHeight="20.0" prefWidth="122.0" text="Your email adress :" textFill="WHITE" underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="email" layoutX="208.0" layoutY="113.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fx:id="close" fill="WHITE" glyphName="TIMES" layoutX="472.0" layoutY="20.0" onMousePressed="#close" size="1.5em" wrappingWidth="13.0" />
+            <FontAwesomeIcon fill="WHITE" glyphName="CHECK" layoutX="239.0" layoutY="62.0" size="1.8em" />
+         </children>
+      </Pane>
+      <Pane fx:id="pane1" layoutX="133.0" layoutY="22.0" prefHeight="379.0" prefWidth="499.0" style="-fx-background-color: #451133;" visible="false">
+         <children>
+            <Label layoutX="79.0" layoutY="65.0" text="There has been a problem with your registration" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="56.0" layoutY="111.0" prefHeight="20.0" prefWidth="122.0" text="It seems like:" textFill="WHITE" underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="email1" layoutX="128.0" layoutY="143.0" prefHeight="20.0" prefWidth="39.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fx:id="close1" fill="WHITE" glyphName="TIMES" layoutX="472.0" layoutY="20.0" onMousePressed="#close" size="1.5em" wrappingWidth="13.0" />
+            <FontAwesomeIcon fill="WHITE" glyphName="TIMES" layoutX="241.0" layoutY="61.0" size="1.8em" />
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>
